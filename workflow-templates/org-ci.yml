@@ -1,0 +1,11 @@
+name: Organisation CI Workflow
+
+on:
+ push:
+  branches: [$default-branch]
+ 
+jobs:
+ build:
+  runs-on: Ubuntu-latest
+  steps:
+   - run: echo "Hello Org CI"
